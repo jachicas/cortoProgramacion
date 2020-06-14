@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// Declarando las funciones que ejecutaran cada ejercicio
 void Ejercicio1();
 void Ejercicio2();
 void Ejercicio3();
@@ -24,7 +25,7 @@ int main()
         cin >> opcion;
         // Limpiar el buffer de teclado
         cin.ignore();
-
+        // Aqui seleccionamos que ejercicio queremos hacer
         switch (opcion)
         {
         case 1:
@@ -175,15 +176,15 @@ void Ejercicio3()
     // Declaramos variable para el anio
     int anio;
     // Le pedimos que ingrese un anio
-    cout << "Ingresa un anio para verificar si es bisiesto" << endl;
+    cout << "-- Ingresa un anio para verificar si es bisiesto --" << endl;
     cin >> anio;
     // Hacemos las comparaciones para ver si es bisiesto
     if (anio % 400 == 0 || anio % 4 == 0 && anio % 100 != 0)
     {
-        cout << "Este anio es bisiesto";
+        cout << "Este anio es bisiesto" << endl << endl;
     }
     else
     {
-        cout << "No es bisiesto";
+        cout << "---- No es bisiesto ----" << endl << endl;
     }
 }
